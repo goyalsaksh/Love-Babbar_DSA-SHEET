@@ -1,0 +1,31 @@
+// Given an array A of size N, print the reverse of it.
+
+// Example:
+
+// Input:
+// 1
+// 4
+// 1 2 3 4
+// Output:
+// 4 3 2 1
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	//code
+	int t;
+	cin>>t;
+	while(t--){
+	int n;
+	cin>>n;
+	int arr[n];
+	for(int i=0;i<n;i++)
+	cin>>arr[i];
+	for(int i=n-1;i>=0;i--)
+	cout<<arr[i]<<" ";
+	cout<<endl; // SC=O(1) TC=O(N)
+	}
+	return 0;
+	
+}
